@@ -81,15 +81,7 @@ public class Treino{
 
 	public void setTipoTreino(String tipoTreino) {
 		this.tipoTreino = tipoTreino;
-	}
-
-	// public String getTreinador() {
-	// return treinador;
-	// }
-
-	// public void setTreinador(){
-	// this.treinador = VerTurnos
-	// }
+	}	
 
 	public String defTipoTrei(int reps) {
 		String str = "";
@@ -139,7 +131,3 @@ public class Treino{
             return str;
 	 }
 }
-
-/*
- * .equals() getTipo.equals(Empurrar)
- */

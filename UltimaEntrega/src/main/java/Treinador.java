@@ -1,3 +1,5 @@
+// Nome: Luiz Gustavo Farabello Martins   RA: 2267942
+
 public class Treinador extends Pessoa {
 
   // Atributos

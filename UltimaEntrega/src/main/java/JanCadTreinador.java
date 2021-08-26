@@ -1,7 +1,6 @@
+// Nome: Luiz Gustavo Farabello Martins   RA: 2267942
 
 import javax.swing.JOptionPane;
-
-// Nome: Luiz Gustavo Farabello Martins   RA: 2267942
 
 public class JanCadTreinador extends javax.swing.JFrame {
 

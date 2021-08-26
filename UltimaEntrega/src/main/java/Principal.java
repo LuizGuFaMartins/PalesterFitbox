@@ -9,7 +9,7 @@ public class Principal extends javax.swing.JFrame {
         setExtendedState(MAXIMIZED_BOTH);
     }
 
-     public static Principal getJanIni(){
+    public static Principal getJanIni(){
         if(janIni == null){
             janIni = new Principal();
         }
@@ -219,18 +219,17 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnCadAluno1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnCadATreinador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnTreinos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCadAluno2, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
-                        .addComponent(btnCadAluno3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnCadATreinador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnTreinos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCadAluno2, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                    .addComponent(btnCadAluno3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(LabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addComponent(btnCadAluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCadATreinador, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,12 +247,12 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCadATreinadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadATreinadorActionPerformed
-        JanCadTreinador.getJanCadTrei().setVisible(true);
-        Principal.getJanIni().setVisible(false);        
+        JanCadTreinador.getJanCadTrei().setVisible(true);        
+        Principal.getJanIni().setVisible(false);
     }//GEN-LAST:event_btnCadATreinadorActionPerformed
 
     private void btnCadAluno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadAluno1ActionPerformed
-        JanCadAluno.getJanCadAluno().setVisible(true);
+        JanCadAluno.getJanCadAluno().setVisible(true); 
         Principal.getJanIni().setVisible(false);
     }//GEN-LAST:event_btnCadAluno1ActionPerformed
 
@@ -262,7 +261,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void btnTreinosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTreinosActionPerformed
-        JanTreinos.getJanTrei().setVisible(true);
+        JanTreinos.getJanTrei().setVisible(true);  
         Principal.getJanIni().setVisible(false);
     }//GEN-LAST:event_btnTreinosActionPerformed
 
@@ -272,12 +271,12 @@ public class Principal extends javax.swing.JFrame {
 
     private void mnuCadAlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCadAlActionPerformed
         JanCadAluno.getJanCadAluno().setVisible(true);
-        Principal.getJanIni().setVisible(false);
+        Principal.getJanIni().setVisible(false);        
     }//GEN-LAST:event_mnuCadAlActionPerformed
 
     private void mnuCadTreiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCadTreiActionPerformed
         JanCadTreinador.getJanCadTrei().setVisible(true);
-        Principal.getJanIni().setVisible(false);       
+        Principal.getJanIni().setVisible(false);
     }//GEN-LAST:event_mnuCadTreiActionPerformed
 
     private void mnuTreinosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuTreinosActionPerformed
