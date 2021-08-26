@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 // Nome: Luiz Gustavo Farabello Martins   RA: 2267942
 
 public class Principal extends javax.swing.JFrame {
@@ -257,7 +260,10 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCadAluno1ActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
-        dispose(); 
+        int sair = JOptionPane.showConfirmDialog(null, "Tem certeza que deseja sair?", "Aviso", 1);
+        if (sair == 0){
+            dispose();
+        }         
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void btnTreinosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTreinosActionPerformed
